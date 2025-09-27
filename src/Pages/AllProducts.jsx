@@ -16,12 +16,11 @@ function AllProducts() {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
       <div className="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4 sm:gap-0">
-        {/* Title */}
         <h1 className="text-3xl font-bold text-gray-800">
-          All Products ({filteredProducts.length})
+          All Products (
+          <span className="text-green-800">{filteredProducts.length}</span>)
         </h1>
 
-        {/* Search Box with Icon */}
         <div className="relative w-full sm:w-1/3">
           <input
             type="text"
